@@ -1,0 +1,56 @@
+/*---Modal component --*/
+.myModal{
+  background-color:#e6eeed;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  box-shadow: 4px 4px 4px #000000b5;
+  border:1px solid #0000000f;
+  border-radius:5px;
+  outline:none;
+  width:60%;
+}
+h2{
+  text-align:center;
+  color:green;
+  font-family: 'Baloo Bhai', cursive;
+
+}
+
+.ReactModalPortal > div{
+  opacity:0;
+  background-color:#0096885e !important;
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+transition:opacity 400ms ease-in-out;
+}
+.ReactModalPortal .ReactModal__Overlay--after-open{
+  opacity:1;
+}
+.ReactModalPortal .ReactModal__Overlay--before-close {
+  opacity:0
+}
+
+@keyframes showModal {
+ from{top:-100%}
+ to{top:50%;}
+}
+.ReactModalPortal .ReactModal__Overlay >div{
+  width:40%;
+  animation-name:showModal;
+  animation-duration: 1s;
+}
+.modal-from-wrapper{
+ padding:40px;
+}
+.form-buttons{
+  display:flex;
+  justify-content: center;
+}
+.btn {
+  width:70px;
+  text-align:center;
+  margin-right:10px;
+}

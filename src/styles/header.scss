@@ -1,0 +1,45 @@
+/*--Header compoenent --*/
+.header {
+  display:inline-block;
+  padding:0px 10px 10px 0px;
+  animation-name:changeHeaderWidth;
+  animation-duration:2s;
+  animation-delay: 2s;
+  width:200px;
+}
+@keyframes changeHeaderWidth {
+  from {width: 56px;}
+  to{ width:200px;}
+}
+@keyframes changeTransformParag{
+  from {margin-left:-100px;
+    opacity:0;
+  }
+  to{margin-left:34px;
+  }
+}
+.header-radius-box p {
+  margin:0;
+  animation-delay: 2s;
+  margin-left:34px;
+  font-family: 'Baloo Bhai', cursive;
+  animation-name:changeTransformParag;
+  animation-duration:4s;
+}
+
+.header-radius-box{
+  border: 1px solid #00000021;
+  display:flex;
+  align-items:center;
+  background-color: #8891987d;
+  padding:10px;
+  border-radius: 50px;
+  position:relative;
+}
+.header-radius-box > span {
+  top: -5px;
+  position: absolute;
+  font-size: 36px;
+  left: 4px;
+  cursor:pointer;
+}

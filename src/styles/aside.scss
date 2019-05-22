@@ -1,0 +1,34 @@
+/*--Aside compoenent --*/
+$light-white:#eaeaea8f;
+$light_white-border:#00000033;
+aside{
+  border:1px solid $light_white-border;
+  margin:3px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  padding:10px;
+  background-color:#0000005e;
+}
+.aside_wrapper{
+background-color:$light-white;
+border-radius:5px;
+height:278px;
+border:1px solid $light_white-border;
+overflow-y:scroll;
+}
+.aside-list{
+  list-style: none;
+  padding:0;
+  font-family: 'Baloo Bhai', cursive
+}
+.aside-list li{
+  background-color:#00968866;
+  padding:10px;
+  cursor:pointer;
+}
+.aside-list li:hover{
+  color:brown;
+}
+.aside-list li:nth-child(odd){
+  background-color:lightblue;
+}
